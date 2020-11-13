@@ -1,11 +1,11 @@
 use_frameworks!
 
 target 'IrohaExample' do
-    pod 'IrohaCommunication', :path => '../'
+    pod 'IrohaCommunication', :git => 'https://github.com/hyperledger/iroha-ios'
 end
 
 target 'IntegrationTestHost' do
-    pod 'IrohaCommunication', :path => '../'
+    pod 'IrohaCommunication', :git => 'https://github.com/hyperledger/iroha-ios'
 
     target 'UnitTests' do
         inherit! :search_paths

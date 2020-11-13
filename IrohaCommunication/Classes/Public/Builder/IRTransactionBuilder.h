@@ -4,7 +4,7 @@
  */
 
 @import Foundation;
-@import IrohaCrypto;
+#import "IRCryptoKey.h"
 
 #import "IRCommand.h"
 #import "IRTransaction.h"

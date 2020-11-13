@@ -5,7 +5,8 @@
 
 #import "IRGetPendingTransactions.h"
 #import "Queries.pbobjc.h"
-@import IrohaCrypto;
+#import "IRPagination.h"
+#import "NSData+Hex.h"
 
 @implementation IRGetPendingTransactions
 

@@ -1,10 +1,10 @@
 PODS:
-  - BoringSSL (10.0.3):
-    - BoringSSL/Implementation (= 10.0.3)
-    - BoringSSL/Interface (= 10.0.3)
-  - BoringSSL/Implementation (10.0.3):
-    - BoringSSL/Interface (= 10.0.3)
-  - BoringSSL/Interface (10.0.3)
+  - BoringSSL (10.0.6):
+    - BoringSSL/Implementation (= 10.0.6)
+    - BoringSSL/Interface (= 10.0.6)
+  - BoringSSL/Implementation (10.0.6):
+    - BoringSSL/Interface (= 10.0.6)
+  - BoringSSL/Interface (10.0.6)
   - gRPC (1.11.0):
     - gRPC-RxLibrary (= 1.11.0)
     - gRPC/Main (= 1.11.0)
@@ -24,24 +24,24 @@ PODS:
   - gRPC/Main (1.11.0):
     - gRPC-Core (= 1.11.0)
     - gRPC-RxLibrary (= 1.11.0)
-  - IrohaCommunication (4.0.0):
-    - BoringSSL (= 10.0.3)
-    - gRPC-ProtoRPC (= 1.11.0)
+  - IrohaCommunication (4.0.1):
+    - BoringSSL (~> 10.0.3)
+    - gRPC-ProtoRPC (~> 1.11.0)
     - IrohaCrypto/Iroha (~> 0.3.0)
-    - nanopb (= 0.3.8)
+    - nanopb (~> 0.3.8)
     - Protobuf (~> 3.5.0)
   - IrohaCrypto/Common (0.3.0)
   - IrohaCrypto/Iroha (0.3.0):
     - IrohaCrypto/Common
-  - nanopb (0.3.8):
-    - nanopb/decode (= 0.3.8)
-    - nanopb/encode (= 0.3.8)
-  - nanopb/decode (0.3.8)
-  - nanopb/encode (0.3.8)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
   - Protobuf (3.5.0)
 
 DEPENDENCIES:
-  - IrohaCommunication (from `../`)
+  - IrohaCommunication (from `https://github.com/hyperledger/iroha-ios`)
 
 SPEC REPOS:
   trunk:
@@ -56,19 +56,24 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   IrohaCommunication:
-    :path: "../"
+    :git: https://github.com/hyperledger/iroha-ios
+
+CHECKOUT OPTIONS:
+  IrohaCommunication:
+    :commit: 4b0335abf5ab97920cf429efa3c194782b284945
+    :git: https://github.com/hyperledger/iroha-ios
 
 SPEC CHECKSUMS:
-  BoringSSL: c46efb47593135382bc0934196f16d2f726f5f36
+  BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
   gRPC: 70703dc9ba31c72341fc7f37745cc1c379edee96
   gRPC-Core: 164639cd8ae18ca8b65477fafb2efbaecf4f181a
   gRPC-ProtoRPC: bb5fddf3424aa4fad74d76736578a79fe40e244e
   gRPC-RxLibrary: 26d53d1b1f306befd4ad4e15bd6de27839a82481
-  IrohaCommunication: e53d340e9e787d920612248c34fbe4e4e5444fe8
+  IrohaCommunication: 0356aef3fed0777d3d7bbb0a40dd7fb2ba9bf55d
   IrohaCrypto: 5d518bd6fcde6d90be5e3f4d077d6cadb6e43fad
-  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
 
-PODFILE CHECKSUM: 29089a97c3781ec366ef8266addf4289525ff849
+PODFILE CHECKSUM: bfa8ce6500ab656b7ab2d7d99ab24c93fa6016c0
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.3
